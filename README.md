@@ -1,36 +1,28 @@
-_[简体中文](README-zh_CN.md) | English_
+# UniApp UI 组件库介绍
 
-# Tencent Cloud · Online Live Streaming Solution
+这是一个基于 **uni-app** 开发的 **UI 组件仓库**。它旨在为开发者提供一套高质量、跨平台的 UI 组件。
 
+---
 
-<img src="https://qcloudimg.tencent-cloud.cn/raw/ec034fc6e4cf42cae579d32f5ab434a1.png" align="left" width=65 height=65>TUILiveKit is a product suitable for interactive live streaming scenarios such as social entertainment, shopping, fitness, etc. By integrating this product, you can add features like interactive voice and video calls, gifting, room management, etc., to your App in just three steps within 30 minutes.
+##  目录结构
 
-## Product Features
+采用了清晰的目录结构来区分针对不同平台打包的组件集，主要包含以下两个目录：
 
-<p align="center">
-  <img src="https://web.sdk.qcloud.com/component/uni-app/assets/clipboard_20250903_054158.png"/>
-</p>
+### `App` 
 
-- **Comprehensive UI Interaction**：We provide an open-source component TUILiveKit with UI, which can save you 90% of development time. You only need to spend 30 minutes to have an online live streaming app similar to TikTok.
-- **Multi-platform Interconnection**：We support Android 、 iOS and uni-app platforms. You can use TUILiveKit components from different platforms to support online live streaming services. In the future, we also plan to support Flutter, MacOS, Windows, and other platforms.
-- **Interactive Barrage**：We support custom text, custom emoticons, room information reminders, and other interactive message displays.
-- **Interactive Gifts**：We support custom gift animation display, custom settlement of fees, and other functions.
+该目录下的组件是为最终打包为 **iOS 或 Android 应用程序** 而设计的。
 
+### `MiniProgram` 
 
-## Before getting started
+该目录下的组件是为最终打包为 **微信小程序平台** 而设计的。
 
-This section shows you the prerequisites you need for building voice chat room.
-[![](./Preview/youtube/android-build-demo.png)](https://www.youtube.com/watch?v=z52EOUEgfgA)
+---
 
-## Getting Started
+## 如何使用
 
-Here, we take the UI-included integration TUILiveKit as an example, which is also our recommended method of integration. The key steps are as follows:：
+开发者应根据最终的 **打包目标平台** 来选择引入对应的组件目录：
 
-- **Step1**：Integrate TUILiveKit into Your Project: uni-app livekit [Integration Process](https://trtc.io/document/60037)
-- **Step2**：Start Your First Online Live Streaming Experience
+* 如果项目主要目标是打包成 **iOS/Android App**，应从 `./App` 目录引入组件。
+* 如果项目目标是打包成 **微信小程序**，应从 `./MiniProgram` 目录引入组件。
 
-## Have any questions?
-- Welcome to submit [**issue**](https://github.com/tencentyun/TUILiveRoom/issues),  
-- Welcome to join our Telegram Group to communicate with our professional engineers! We are more than happy to hear from you，Click to join: https://t.me/+EPk6TMZEZMM5OGY1
-Or scan the QR code 
-<img src="https://github.com/Tencent-RTC/TUILiveKit/blob/main/Preview/telegram-code.jpg"/>
+通过这种分离，可以确保每个平台的组件都是**最优适配**的版本，避免因跨平台差异导致的兼容性问题。
