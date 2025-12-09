@@ -25,6 +25,18 @@
 			}
 		},
 		{
+			"path": "pages/createConversation/createConversation",
+			"style": {
+				"navigationBarTitleText": "选择联系人"
+			}
+		},
+		{
+			"path": "TUIKit/components/Group/GroupSettings",
+			"style": {
+				"navigationBarTitleText": "群设置"
+			}
+		},
+		{
 			"path": "TUIKit/components/CallView/CallView",
 			"style": {
 				"navigationBarTitleText": "uni-app"
